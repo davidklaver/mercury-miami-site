@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300);
 @import url(http://fonts.googleapis.com/css?family=Playball);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 body, html{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Playball', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 }
@@ -15,6 +16,12 @@ body, html{
 
 h1{
 	text-transform: uppercase;
+}
+
+@media(min-width: 768px) {
+	h1 {
+		font-size: 48px;
+	}
 }
 
 h2{
@@ -78,7 +85,7 @@ a:focus{
 }
 
 .content {
-	padding: 15% 0 18% 0;
+	padding: 20% 0 25% 0;
 	text-align: center;
 }
 /* Navigation */
@@ -318,4 +325,8 @@ nav#tf-footer {
 	background: #222222;
 	padding: 3% 0 2% 0;
 	color: #f1f1f1;
+}
+
+* {
+	font-family: 'Montserrat';
 }
