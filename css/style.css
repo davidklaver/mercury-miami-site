@@ -14,7 +14,7 @@ body, html{
 
 @media (min-width: 1200px){
 	.container {
-	width: 1100px;
+	width: 1200px;
 	}
 }
 
@@ -41,7 +41,7 @@ h4 {
 }
 
 p{
-	font-size: 13px;
+	font-size: 16px;
 }
 
 @media(min-width: 768px) {
@@ -131,11 +131,15 @@ a:focus{
 }
 
 #tf-menu.navbar-default .navbar-nav > li > a {
-	color: white;
+	color: rgb(0,0,100);
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 1px;
+}
+
+.whiteFont {
+	color: white !important;
 }
 
 #tf-menu.navbar-default .navbar-nav > li > a:hover, 
@@ -182,7 +186,6 @@ a:focus{
 
 #logo2 {
 	width: 90%;
-	margin-left: 5%;
 }
 
 #tf-service{
@@ -323,7 +326,7 @@ ul.cat.list-inline li a:hover{
 #tf-about .overlay{
 	height: auto;
 	background-attachment: fixed;
-	padding: 10% 0;
+	padding: 5% 0;
 }
 
 #tf-why-me{
@@ -353,8 +356,14 @@ ul.why-me li{
 	text-align: center;
 }
 
+#contactInfo h2 {
+	font-size: 40px;
+	color: rgb(0,200,200);
+	font-style: italic;
+}
 #contactInfo p {
 	font-size: 24px;
+	color: rgb(0,43,150);
 }
 
 @media(max-width: 991px) {
@@ -368,6 +377,10 @@ form#contact {
 	padding: 5%;
 	background: #f1f1f1;
 	outline: 6px solid rgba(34, 34, 34, 0.08);
+}
+
+.section-title h3 {
+	margin-top: 0;
 }
 
 #tf-contact input.form-control {
@@ -397,6 +410,11 @@ form#contact {
 #tf-contact .form-control:hover{
 	border-top: 2px solid #2F937B;
 }
+
+#submitBtn {
+	margin-top: 20px;
+}
+
 nav#tf-footer {
 	background: #222222;
 	background: rgba(0, 67, 123, 0.8);

@@ -18,9 +18,11 @@ function main() {
       if (window_top > div_top) {
           $('#tf-menu').addClass('stick');
           $('#logo').addClass('stick');
+          $('.navLink').addClass('whiteFont');
       } else {
           $('#tf-menu').removeClass('stick');
           $('#logo').removeClass('stick');
+          $('.navLink').removeClass('whiteFont');
       }
   }
 
