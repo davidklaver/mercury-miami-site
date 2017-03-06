@@ -95,12 +95,19 @@ a:focus{
 /* Navigation */
 #tf-menu {
 	margin-bottom: 0;
-	background: transparent;
+	background: rgba(0, 97, 153, 0.9);
 	border: 0;
 	color: #fff !important;
-	padding: 1% 0;
+	padding: 0;
 	transition: all 0.5s;
 }
+
+@media(min-width: 768px) {
+	#tf-menu {
+		background: transparent;
+	}
+}
+
 #sticky {
     padding: 0.5ex;
     background-color: #333;
@@ -114,9 +121,15 @@ a:focus{
     width: 100%;
     z-index: 10000;
     background: #222222;
-    background: rgba(0, 67, 123, 0.8);
-    padding: 8px 0;
+    background: rgba(0, 97, 153, 0.9);
 }
+
+@media(min-width: 768px) {
+	#tf-menu.stick {
+    padding: 8px 0;
+  }
+}
+
 #tf-menu.navbar-default .navbar-nav > li > a {
 	color: white;
 	text-transform: uppercase;
@@ -145,7 +158,12 @@ a:focus{
 	position: fixed;
 	left: 5px;
 	top: 5px;
-	display: none;
+}
+
+@media(min-width: 768px) {
+	#logo {
+		display: none;	
+	}
 }
 
 #logo.stick {
@@ -153,7 +171,13 @@ a:focus{
 }
 
 #logoPicSmall {
-	width: 55%;
+	width: 40%;
+}
+
+@media (min-width: 768px) {
+	#logoPicSmall {
+		width: 55%;
+	}
 }
 
 #logo2 {
@@ -249,6 +273,14 @@ a.btn.btn-primary.my-btn2:hover{
 	#navbarContainer {
 		width: 96%;
 		margin: 0 2%;
+	}
+}
+
+@media(max-width: 991px) {
+	.media-heading {
+	  margin-top: 40px;
+	  margin-bottom: 0;
+	  text-align: center;
 	}
 }
 
