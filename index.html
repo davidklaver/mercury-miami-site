@@ -54,7 +54,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand logo" href="index.html" id="logo">(LOGO) MMI</a>
+                      <a class="navbar-brand logo" href="index.html" id="logo"><img src="img/logo1 - small.png" id="logoPicSmall"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,10 +71,11 @@
             </nav>
 
             <div class="container">
-                <div class="content">
-                    <h1>Mercury Maintenance, Inc.</h1>
+                <div class="content" id="homeContentDiv">
+                    <img src="img/logo2.png" id="logo2">
+                    <!-- <h1>Mercury Maintenance, Inc.</h1>
                     <h3>We rule when it comes to window cleaning. And slogans.</h3>
-                    <br>
+                    <br> -->
                     <a href="#tf-about" class="btn btn-primary my-btn">About Us</a>
                     <a href="#tf-contact" class="btn btn-primary my-btn2">Request a Quote</a>
                 </div>
@@ -129,47 +130,6 @@
             
         </div>
     </div>
-<!-- 
-    <div id="tf-portfolio">
-        <div class="container">
-            <div class="section-title">
-                <h3>My Latest Works</h3>
-                <hr>
-            </div>
-
-            <div class="space"></div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/09.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/02.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/03.jpg" class="img-responsive">
-                </div>
-            </div>
-
-            <div class="row toppadding">
-                <div class="col-md-4">
-                    <img src="img/04.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/05.jpg" class="img-responsive">
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/06.jpg" class="img-responsive">
-                </div>
-            </div>
-
-        </div>
-    </div>
- -->
     <div id="tf-about">
         <div class="overlay">
             <div class="container">
@@ -219,14 +179,28 @@
         <div class="container">
             <div class="section-title">
                 <h3>Contact us to request a quote (or just to say hi).</h3>
-                <p>Cras sit amet nibh libero, in gravida nulla. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                <!-- <p>Cras sit amet nibh libero, in gravida nulla. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p> -->
                 <hr>
             </div>
 
             <div class="space"></div>
-
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-6" id="contactInfo">
+                   <!--  <h2>Mercury Maintenance, Inc.</h2>
+                    <p>P.O. Box 640274</p>
+                    <p>Miami fl 33164-0274</p>
+                    <br>
+                    <br> -->
+                    <h2>Give Us a Call!</h2>
+                    <br>
+                    <p><strong>Office:</strong></p>
+                    <p>(305)374-6691</p>
+                    <br>
+                    <p><strong>Cell:</strong></p>
+                    <p>(305)209-5903</p>
+                </div>
+            
+                <div class="col-md-6">
                     <form id="contact">
                       <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
@@ -245,11 +219,13 @@
     </div>
 
     <nav id="tf-footer">
-        <div class="container">
-             <div class="pull-left">
-                <p>2017 © DK Designs. All Rights Reserved. 
+        <div class="container" id="footerContainer">
+            <div class="addressDiv">
+                <p class="address">Mercury Maintenance, Inc.</p>
+                <p class="address">P.O. Box 640274</p>
+                <p class="address">Miami fl 33164-0274</p>
             </div>
-            <div class="pull-right"> 
+            <div class="socialLinksDiv"> 
                 <ul class="social-media list-inline">
                     <li><a href="#"><span class="fa fa-facebook"></span></a></li>
                     <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -257,6 +233,7 @@
                     <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                 </ul>
             </div>
+            <p class="copyright">2017 © DK Designs. All Rights Reserved.</p> 
         </div>
     </nav>
    

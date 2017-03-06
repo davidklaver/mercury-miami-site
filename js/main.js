@@ -17,8 +17,10 @@ function main() {
       var div_top = $('#sticky-anchor').offset().top;
       if (window_top > div_top) {
           $('#tf-menu').addClass('stick');
+          $('#logo').addClass('stick');
       } else {
           $('#tf-menu').removeClass('stick');
+          $('#logo').removeClass('stick');
       }
   }
 

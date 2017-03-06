@@ -2,6 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Playball);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
+* {
+	font-family: 'Montserrat';
+}
+
 body, html{
 	font-family: 'Playball', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -25,8 +29,8 @@ h1{
 }
 
 h2{
-	line-height: 20px;
-	margin:  0;
+	/*line-height: 20px;*/
+	margin:  20px 0;
 }
 
 h4 {
@@ -79,7 +83,7 @@ a:focus{
 }
 
 #tf-home .overlay {
-	background: rgba(0,0,0,0.45);
+	background: rgba(255,255,255,0.40);
 	height: auto;
 	background-attachment: fixed;
 }
@@ -94,7 +98,7 @@ a:focus{
 	background: transparent;
 	border: 0;
 	color: #fff !important;
-	padding: 2% 0;
+	padding: 1% 0;
 	transition: all 0.5s;
 }
 #sticky {
@@ -110,7 +114,8 @@ a:focus{
     width: 100%;
     z-index: 10000;
     background: #222222;
-    padding: 1% 0;
+    background: rgba(0, 67, 123, 0.8);
+    padding: 8px 0;
 }
 #tf-menu.navbar-default .navbar-nav > li > a {
 	color: white;
@@ -123,20 +128,45 @@ a:focus{
 #tf-menu.navbar-default .navbar-nav > li > a:hover, 
 #tf-menu.navbar-default .navbar-nav > li > a:focus {
 	color: #2F937B;
-	background-color: transparent;
+	color: #7bf;
+	/*background-color: white;*/
+}
+
+#homeContentDiv {
+	padding: 5% 0;
 }
 
 #logo {
-	color: white;
+/*	color: white;
 	font-weight: 600;
-	font-size: 22px;
+	font-size: 22px;*/
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	left: 5px;
+	top: 5px;
+	display: none;
+}
+
+#logo.stick {
+	display: initial;
+}
+
+#logoPicSmall {
+	width: 55%;
+}
+
+#logo2 {
+	width: 90%;
+	margin-left: 5%;
 }
 
 #tf-service{
-	padding: 10% 0 7% 0; 
+	padding: 5% 0 7% 0; 
 }
 
-#tf-service h3 {
+/*#tf-service*/ h3 {
+	font-size: 42px;
 	text-align: center;
 	margin: 4% auto;
 }
@@ -175,7 +205,7 @@ a.btn {
 button.btn.btn-primary.my-btn,
 a.btn.btn-primary.my-btn {
 	background: #2F937B;
-	background: rgba(47, 147, 223, 0.8);
+	background: rgba(47, 167, 223, 0.8);
 	border-color: white;
 	border-radius: 0px;
 	border-width: 2px;
@@ -184,6 +214,7 @@ a.btn.btn-primary.my-btn {
 	font-size: 12px;
 	letter-spacing: 1px;
 	font-weight: 600;
+	margin-top: 55px;
 }
 button.btn.btn-primary.my-btn:hover,
 a.btn.btn-primary.my-btn:hover{
@@ -207,6 +238,7 @@ a.btn.btn-primary.my-btn2 {
 	letter-spacing: 1px;
 	font-weight: 600;
 	color:steelblue;
+	margin-top: 55px;
 }
 
 a.btn.btn-primary.my-btn2:hover{
@@ -236,7 +268,6 @@ ul.cat.list-inline li a:hover{
 	color: #ffffff;
 }
 
-.space{ padding: 20px}
 .toppadding{ padding-top: 30px}
 .nopadding{ padding:  0;}
 
@@ -253,6 +284,8 @@ ul.cat.list-inline li a:hover{
 		background-repeat: no-repeat;
 		color: #222222;
 	}
+
+	.space{ padding: 20px}
 }
 
 #tf-about .overlay{
@@ -286,6 +319,17 @@ ul.why-me li{
 	background-repeat: no-repeat;
 	padding: 5% 0;
 	text-align: center;
+}
+
+#contactInfo p {
+	font-size: 24px;
+}
+
+@media(max-width: 991px) {
+	#contactInfo {
+		width: auto;
+		padding-bottom: 50px;
+	}
 }
 
 form#contact {
@@ -323,10 +367,53 @@ form#contact {
 }
 nav#tf-footer {
 	background: #222222;
-	padding: 3% 0 2% 0;
+	background: rgba(0, 67, 123, 0.8);
+	padding: 2% 0 1% 0;
 	color: #f1f1f1;
+	text-align: center;
 }
 
-* {
-	font-family: 'Montserrat';
+.socialLinksDiv {
+	text-align: center;
 }
+
+.addressDiv {
+	display: block;
+}
+
+.address {
+	font-size: 16px;
+}
+
+.copyright {
+	font-size: 12px;
+	margin-top: 25px;
+}
+
+@media(min-width: 992px) {
+
+	#footerContainer {
+		margin: 0 auto;
+	}
+
+	.addressDiv {
+		display: inline-block;
+		/*padding-left: 25px;*/
+	}
+
+	.address {
+		display: inline-block;
+		padding: 0 5px;
+	}
+
+	.socialLinksDiv {
+		float: right;
+	}
+
+	.copyright {
+		float: left;
+		margin-top: 0;
+	}
+}
+
+
