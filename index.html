@@ -54,14 +54,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand logo" href="index.html" id="logo"><img src="img/logo1 - small.png" id="logoPicSmall"></a>
+                      <a class="navbar-brand logo" href="index.html" id="logo"><img src="img/logo1 - small.png" class="logoPicSmall" id="logo1White"></a>
+                      <!-- <a class="navbar-brand logo" href="index.html" id="logo"><img src="img/logo1trans.png" class="logoPicSmall"></a> -->
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
                         <li><a href="#tf-home" class="navLink">Home</a></li>
-                        <li><a href="#tf-service" class="navLink">Why Hire Us</a></li>
+                        <li><a href="#tf-service" class="navLink">Why Hire Us?</a></li>
                         <li><a href="#tf-about" class="navLink">About Our Company</a></li>
                         <li><a href="#tf-why-me" class="navLink">Services</a></li>
                         <li><a href="#tf-contact" class="navLink">Contact</a></li>
@@ -72,12 +73,10 @@
 
             <div class="container">
                 <div class="content" id="homeContentDiv">
+                    <img src="img/squeegee.png" id="squeegee">
                     <img src="img/logo2.png" id="logo2">
-                    <!-- <h1>Mercury Maintenance, Inc.</h1>
-                    <h3>We rule when it comes to window cleaning. And slogans.</h3>
-                    <br> -->
-                    <a href="#tf-about" class="btn btn-primary my-btn">About Us</a>
-                    <a href="#tf-contact" class="btn btn-primary my-btn2">Request a Quote</a>
+                    <a href="#tf-about" class="btn btn-primary my-btn" id="aboutUsBtn">About Us</a>
+                    <a href="#tf-contact" class="btn btn-primary my-btn2" id="requestQuoteBtn">Request a Quote</a>
                 </div>
             </div>
         </div>
@@ -85,7 +84,7 @@
 
     <div id="tf-service">
         <div class="container">
-        <h3>Why Hire Us</h3>
+        <h3>Why Hire Us?</h3>
             <div class="col-md-4">
 
                 <div class="media">
@@ -121,7 +120,7 @@
                     <i class="fa fa-phone"></i>
                   </div>
                   <div class="media-body">
-                    <h4 class="media-heading">Available 24 Hours a Day for your Window-Cleaning Emegencies</h4>
+                    <h4 class="media-heading">NOT Available 24 Hours a Day for your Window-Cleaning Emegencies</h4>
                     <p>Metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.</p>
                   </div>
                 </div>
@@ -131,16 +130,16 @@
         </div>
     </div>
     <div id="tf-about">
-        <div class="overlay">
-            <div class="container">
+        <div>
+            <div class="container" id="aboutContainer">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6">
-                        <h3>About Our Company</h3>
+                        <h3 id="aboutHeading">About Our Company</h3>
                         <br>
                         <p>Cras sit amet nibh libero, in gravida nulla. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                         <p>Metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                         <br>
-                        <a href="#tf-contact" class="btn btn-primary my-btn dark">Contact</a>
+                        <a href="#tf-contact" class="btn btn-primary my-btn dark contactBtn">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +147,7 @@
     </div>
 
     <div id="tf-why-me">
-        <div class="overlay">
+        <div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -168,7 +167,7 @@
                                 <p>Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
                             </li>
                         </ul>
-                        <a href="#tf-contact" class="btn btn-primary my-btn dark">Contact</a>
+                        <a href="#tf-contact" class="btn btn-primary my-btn dark contactBtn">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -179,18 +178,12 @@
         <div class="container">
             <div class="section-title">
                 <h3>Contact us to request a quote (or just to say hi).</h3>
-                <!-- <p>Cras sit amet nibh libero, in gravida nulla. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p> -->
                 <hr>
             </div>
 
             <div class="space"></div>
             <div class="row">
                 <div class="col-md-6" id="contactInfo">
-                   <!--  <h2>Mercury Maintenance, Inc.</h2>
-                    <p>P.O. Box 640274</p>
-                    <p>Miami fl 33164-0274</p>
-                    <br>
-                    <br> -->
                     <h2>Give Us a Call!</h2>
                     <p>We'd love to hear from you.</p>
                     <br>

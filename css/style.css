@@ -74,16 +74,17 @@ a:focus{
 
 /* Home Style */
 #tf-home{
-	background: url(../img/windowbg.jpg);
+	background: url(../img/clouds.jpg);
+	/*background: skyblue;*/
 	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+	background-position: bottom;
+/*	background-attachment: fixed;*/
 	background-repeat: no-repeat;
 	color: #eee;
 }
 
 #tf-home .overlay {
-	background: rgba(255,255,255,0.40);
+	background: rgba(255,255,255,0.1);
 	height: auto;
 	background-attachment: fixed;
 }
@@ -92,6 +93,7 @@ a:focus{
 	padding: 20% 0 25% 0;
 	text-align: center;
 }
+
 /* Navigation */
 #tf-menu {
 	margin-bottom: 0;
@@ -166,7 +168,7 @@ a:focus{
 
 @media(min-width: 768px) {
 	#logo {
-		display: none;	
+		/*display: none;*/	
 	}
 }
 
@@ -174,25 +176,61 @@ a:focus{
 	display: initial;
 }
 
-#logoPicSmall {
+.logoPicSmall {
 	width: 40%;
 }
 
+.invisible {
+	display: initial;
+}
+
+
 @media (min-width: 768px) {
-	#logoPicSmall {
+	.logoPicSmall {
 		width: 55%;
+	}
+
+	.invisible {
+		display: none;
 	}
 }
 
 #logo2 {
-	width: 90%;
+	width: 80%;
+	margin: 5% 10%;
+}
+
+@media(min-width: 480px) {
+	#logo2 {
+		width: 70%;
+		margin: 5% 15%;
+	}
+}
+
+
+#squeegee {
+	position: absolute;
+	filter: opacity(.7);
+	left: 95vw;
+	height: 70%;
+	width: 150vw;
+  animation-name: enterLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+  animation-delay: .75s;
+  animation-timing-function: linear;
+}
+
+@keyframes enterLeft {
+    from {left: -35vw;}
+    to {left: 95vw;}
 }
 
 #tf-service{
-	padding: 5% 0 7% 0; 
+	padding: 1% 0; 
 }
 
-/*#tf-service*/ h3 {
+ h3 {
 	font-size: 42px;
 	text-align: center;
 	margin: 4% auto;
@@ -212,20 +250,16 @@ a:focus{
 	color: rgb(47, 147, 123);
 }
 
-#tf-portfolio{
-	background: #f1f1f1;
-	padding: 5%  0 8% 0;
-	text-align: center;
+.section-title hr {
+	border-color: rgb(47, 147, 223);
+	width: 160px;
 }
 
-.section-title hr{
-	border-color: rgb(47, 147, 123);
-	width: 60px;
+.section-title h2 { 
+	font-weight: 700;
 }
 
-.section-title h2{ font-weight: 700;}
-button.btn,
-a.btn {
+button.btn, a.btn {
 	margin: 15px 5px;
 	transition: all 0.5s;
 }
@@ -254,6 +288,7 @@ a.btn.btn-primary.my-btn.dark:hover{
 	color: #ffffff;
 	border-color: transparent;
 }
+
 a.btn.btn-primary.my-btn2 {
 	background: white;
 	border-color: #FFFFFF;
@@ -265,10 +300,22 @@ a.btn.btn-primary.my-btn2 {
 	letter-spacing: 1px;
 	font-weight: 600;
 	color:steelblue;
-	margin-top: 55px;
+	/*margin: 55px;*/
 }
 
-a.btn.btn-primary.my-btn2:hover{
+#requestQuoteBtn, #aboutUsBtn {
+	margin: 50px 10px 50px 10px;
+}
+
+@media(max-width: 479px) {
+	#requestQuoteBtn {
+		display: block;
+		margin: 0 22% 50px 22%;
+		width: 56%;
+	}
+}
+
+a.btn.btn-primary.my-btn2:hover {
 	background: darkblue;
 	color: white;
 }
@@ -307,26 +354,24 @@ ul.cat.list-inline li a:hover{
 .nopadding{ padding:  0;}
 
 #tf-about{
-		background-color: #EEE;
-	}
-
-@media(min-width: 992px) {
-	#tf-about{
-		background: url(../img/windowbg2.png);
-		background-size: cover;
-		background-position: center;
-		background-attachment: scroll;
-		background-repeat: no-repeat;
-		color: #222222;
-	}
-
+	background: url(../img/windowbg2.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	padding: 50px 0;
+}	
 	.space{ padding: 20px}
-}
+
 
 #tf-about .overlay{
 	height: auto;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	padding: 5% 0;
+}
+
+#aboutHeading {
+	padding-top: 50px;
 }
 
 #tf-why-me{
@@ -335,7 +380,8 @@ ul.cat.list-inline li a:hover{
 	background-position: center;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
-	color: #222222;
+	color: #222;
+	padding: 4% 0;
 }
 
 #tf-why-me .overlay{
@@ -347,18 +393,20 @@ ul.why-me li{
 	margin: 10px 0;
 }
 #tf-contact{
-	background: url(../img/08.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: scroll;
-	background-repeat: no-repeat;
 	padding: 5% 0;
 	text-align: center;
 }
 
+@media(min-width: 480px) {
+	#tf-contact {
+		background: url(../img/phonebg.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
+
 #contactInfo h2 {
 	font-size: 40px;
-	color: rgb(0,200,200);
 	font-style: italic;
 }
 #contactInfo p {
@@ -464,6 +512,5 @@ nav#tf-footer {
 		float: left;
 		margin-top: 0;
 	}
+
 }
-
-

@@ -18,10 +18,12 @@ function main() {
       if (window_top > div_top) {
           $('#tf-menu').addClass('stick');
           $('#logo').addClass('stick');
+          // $('#logo1White').removeClass('invisible');
           $('.navLink').addClass('whiteFont');
       } else {
           $('#tf-menu').removeClass('stick');
           $('#logo').removeClass('stick');
+          // $('#logo1White').addClass('invisible');
           $('.navLink').removeClass('whiteFont');
       }
   }
