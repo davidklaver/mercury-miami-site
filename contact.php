@@ -2,7 +2,7 @@
 
 // configure
 $from = 'contactForm@mercurymaintenance.com';
-$sendTo = 'dovidklaver@gmail.com';
+$sendTo = 'office@mercurymiami.com';
 $subject = 'You have a new message from your contact form!';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = "Your message was successfully submitted! We'll get back to you asap.";

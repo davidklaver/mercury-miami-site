@@ -213,24 +213,51 @@ a:focus{
 	}
 }
 
+@keyframes dirtRemoval {
+    from {left: -35vw;}
+    to {left: 102vw;}
+}
 
-#squeegee {
+#whiteDirt, #squeegee {
 	position: fixed;
-	filter: opacity(.7);
-	left: 102vw;
-	height: 67%;
 	width: 150vw;
-  animation-name: enterLeft;
-  animation-duration: 1.5s;
-  animation-fill-mode: backwards;
-  animation-delay: .85s;
+	left: 102vw;
+	top: 0;
+	animation-fill-mode: backwards;
   animation-timing-function: linear;
   overflow: hidden;
 }
 
-@keyframes enterLeft {
-    from {left: -35vw;}
-    to {left: 102vw;}
+#whiteDirt {	
+	filter: opacity(.7);
+	height: 95%;
+	margin-top: .5%;
+	animation-name: dirtRemoval;
+  animation-duration: 2.3s;
+  animation-delay: 1.5s;
+}
+
+@keyframes squeegee {
+    0%   {left: 102vw;}
+    25%  {left: -35vw;}
+    100%  {left: 102vw;}
+}
+
+#squeegee {
+	height: 97%;
+  animation-name: squeegee;
+  animation-duration: 3s;
+  animation-delay: .8s;
+}
+
+@media(max-width: 767px) {
+	#whiteDirt {	
+		animation-duration: 1.5s;
+	  animation-delay: 1.3s;
+	}
+	#squeegee {
+	  animation-duration: 2s;
+	}
 }
 
 #tf-service{
