@@ -10,6 +10,7 @@ body, html{
 	font-family: 'Playball', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
+	overflow-x: hidden;
 }
 
 @media (min-width: 1200px){
@@ -118,7 +119,7 @@ a:focus{
     border-radius: 0.5ex;
 }
 #tf-menu.stick {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 100%;
     z-index: 10000;
@@ -140,19 +141,24 @@ a:focus{
 	letter-spacing: 1px;
 }
 
-.whiteFont {
-	color: white !important;
-}
-
 #tf-menu.navbar-default .navbar-nav > li > a:hover, 
 #tf-menu.navbar-default .navbar-nav > li > a:focus {
 	color: #2F937B;
 	color: #7bf;
+	color: white;
 	/*background-color: white;*/
 }
 
+.whiteFont {
+	color: white !important;
+}
+
+.whiteFont:hover {
+	color: darkblue !important;
+}
+
 #homeContentDiv {
-	padding: 5% 0;
+	padding: 7% 0;
 }
 
 #logo {
@@ -209,21 +215,22 @@ a:focus{
 
 
 #squeegee {
-	position: absolute;
+	position: fixed;
 	filter: opacity(.7);
-	left: 95vw;
-	height: 70%;
+	left: 102vw;
+	height: 67%;
 	width: 150vw;
   animation-name: enterLeft;
   animation-duration: 1.5s;
   animation-fill-mode: backwards;
-  animation-delay: .75s;
+  animation-delay: .85s;
   animation-timing-function: linear;
+  overflow: hidden;
 }
 
 @keyframes enterLeft {
     from {left: -35vw;}
-    to {left: 95vw;}
+    to {left: 102vw;}
 }
 
 #tf-service{
@@ -280,7 +287,7 @@ a.btn.btn-primary.my-btn {
 button.btn.btn-primary.my-btn:hover,
 a.btn.btn-primary.my-btn:hover{
 	background: white;
-	color: steelblue;
+	color: darkblue;
 }
 button.btn.btn-primary.my-btn.dark:hover,
 a.btn.btn-primary.my-btn.dark:hover{
